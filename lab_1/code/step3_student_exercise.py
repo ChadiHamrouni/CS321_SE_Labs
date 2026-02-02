@@ -7,32 +7,33 @@
 # Exercise 1: List Operations
 # Implement a function that adds an item to a list and returns the updated list
 def add_to_list(items, new_item):
-    # TODO: Add new_item to the items list and return the list
-    pass
+    items.append(new_item)
+    return items
 
 # Exercise 2: Dictionary Lookup
 # Implement a function that checks if a key exists in a dictionary and returns its value or None
 def find_in_dict(data, key):
-    # TODO: If key exists in data, return its value; otherwise return None
-    pass
+    return data.get(key)
 
 # Exercise 3: String Processing
 # Implement a function that takes a string, converts it to lowercase, and splits it into words
 def process_string(text):
-    # TODO: Convert text to lowercase and split into a list of words
-    pass
+    return text.lower().split()
 
 # Exercise 4: Conditional Logic with Lists
 # Implement a function that filters a list to include only items longer than a given length
 def filter_long_items(items, min_length):
-    # TODO: Return a new list containing only strings from items that are longer than min_length
-    pass
+    result = []
+    for item in items:
+        if len(item) > min_length:
+            result.append(item)
+    return result
 
 # Exercise 5: Dictionary Update
 # Implement a function that updates a dictionary with a new key-value pair
 def update_dict(data, key, value):
-    # TODO: Add or update the key with the value in data and return the updated dict
-    pass
+    data[key] = value
+    return data
 
 # Test functions (students should run this to verify their implementations)
 if __name__ == "__main__":
