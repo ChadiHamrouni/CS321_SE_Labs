@@ -1,6 +1,6 @@
 
 # Example prompt string
-prompt = "What is the best way to learn prompt engineering?"
+prompt = "What is the best way  to learn prompt, engineering?"
 
 upper_prompt = prompt.upper()
 print(f"Uppercase: {upper_prompt}")
@@ -9,12 +9,6 @@ lower_prompt = prompt.lower()
 print(f"Lowercase: {lower_prompt}")
 
 words = prompt.split()
-print(f"Words: {words}")
-
-smaller = 25
-bigger = 35 
-print(min(smaller, bigger))
-
 
 # 4. Join words back into a string with different separator
 joined_with_dash = "-".join(words)
