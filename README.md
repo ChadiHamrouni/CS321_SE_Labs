@@ -25,6 +25,15 @@ Hands-on exploration of how LLMs work
 - **Token-by-token generation**
 - **Prompt structure optimization**
 
+### Lab 4: Structured Output with Pydantic & JSON Mode ⭐ NEW
+Building reliable LLM applications with type-safe structured output
+- **Pydantic models for type safety**
+- **JSON mode for reliable structured data**
+- **RAG system with type-safe models**
+- **Sentiment analysis from reviews**
+- **AI-powered code reviewer**
+- **Dictionary unpacking patterns**
+
 
 ## 📖 Resources
 - [Ollama Website](https://ollama.com)
