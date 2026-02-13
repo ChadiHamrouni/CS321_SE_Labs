@@ -31,14 +31,21 @@ def review_code(submission: CodeSubmission, model: str = 'gemma3:1b') -> CodeRev
         messages=[{'role': 'user', 'content': prompt}],
         format='json'
     )
-    
     result = json.loads(response.message.content)
     
     # The ** operator is called "dictionary unpacking" - it takes a dictionary and unpacks it into keyword arguments.
     # For example, if result = {"rating": "Fair", "issues": ["bug 1"], "suggestions": ["fix 1"], "refactored_code": "..."}
     # Then CodeReview(**result) is equivalent to:
     # CodeReview(rating="Fair", issues=["bug 1"], suggestions=["fix 1"], refactored_code="...")
-    return CodeReview(**result)
+    # return CodeReview(**result)
+    
+    # Alternative: You could pass parameters directly without dictionary unpacking:
+    return CodeReview(
+        rating=result["rating"],
+        issues=result["issues"],
+        suggestions=result["suggestions"],
+        refactored_code=result["refactored_code"]
+    )
 
 
 def run_exercise():
@@ -49,12 +56,12 @@ def run_exercise():
     code = CodeSubmission(
         filename="calculate_average.py",
         code="""
-def calculate_average(numbers):
-    for num in numbers:
-        total = total + num
-    average = total / len(numbers)
-    return average
-        """
+        def calculate_average(numbers):
+            for num in numbers:
+                total = total + num
+            average = total / len(numbers)
+            return average
+                """
     )
     
     print(f"📄 {code.filename}")
@@ -62,8 +69,8 @@ def calculate_average(numbers):
     
     review = review_code(code)
     
-    print(f"\n⭐ Rating: {review.rating}")
-    print("\n⚠️  Issues:")
+    print(f"\n ⭐ Rating: {review.rating}")
+    print("\n ⚠️  Issues:")
     for issue in review.issues:
         print(f"  • {issue}")
     print("\n💡 Suggestions:")
