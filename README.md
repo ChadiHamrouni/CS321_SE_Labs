@@ -34,6 +34,14 @@ Building reliable LLM applications with type-safe structured output
 - **AI-powered code reviewer**
 - **Dictionary unpacking patterns**
 
+### Lab 5: AI Pull Request Reviewer System ⭐ NEW
+Building a self-correcting AI code review pipeline
+- **Multi-step LLM pipeline**
+- **Self-rechecking PR loop**
+- **Pydantic models for code reviews**
+- **AI bug fix generation**
+- **Iterative code improvement**
+
 
 ## 📖 Resources
 - [Ollama Website](https://ollama.com)
