@@ -42,7 +42,7 @@ Building a self-correcting AI code review pipeline
 - **AI bug fix generation**
 - **Iterative code improvement**
 
-### Lab 6: FastAPI + Ollama ⭐ NEW
+### Lab 6: FastAPI + Ollama 
 Building a REST API that proxies Ollama using FastAPI
 - **FastAPI router & endpoint design**
 - **HTTP methods**
@@ -51,6 +51,15 @@ Building a REST API that proxies Ollama using FastAPI
 - **Text embeddings**
 - **Sampling options (temperature, seed, top-k)**
 - **Testing APIs with Postman**
+
+
+### Lab 7: AI Agents with the OpenAI Agents SDK
+Building autonomous agents that use tools and browse the web — powered by a local Ollama model
+- **Agent loop concept (tool call → result → reasoning)**
+- **`@function_tool` decorator and docstring-driven tool descriptions**
+- **Pydantic models to constrain tool inputs (`Literal` enums)**
+- **Web search and page fetching via DuckDuckGo (no API key)**
+- **Multi-turn conversation history**
 
 
 ## 📖 Resources
