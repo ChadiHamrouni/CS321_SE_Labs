@@ -61,6 +61,14 @@ Building autonomous agents that use tools and browse the web — powered by a lo
 - **Web search and page fetching via DuckDuckGo (no API key)**
 - **Multi-turn conversation history**
 
+### Lab 8: Multi-Agent Systems
+Building a multi-agent system with a triage router and three specialist agents — powered by a local Ollama model
+- **Triage agent that routes to specialists via `handoff()`**
+- **Research Agent — web search via DuckDuckGo**
+- **Math Agent — arithmetic and unit conversions**
+- **Writing Agent — summarise and improve text**
+- **Handoff tracing to see which agent handled each request**
+
 
 ## 📖 Resources
 - [Ollama Website](https://ollama.com)
