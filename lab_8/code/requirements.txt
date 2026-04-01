@@ -1,0 +1,4 @@
+openai-agents==0.9.3
+pydantic==2.12.5
+httpx==0.28.1
+ddgs==9.11.3
